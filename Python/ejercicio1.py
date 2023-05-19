@@ -80,3 +80,75 @@ def calculoAnidado():
     input("Para continuar presione Enter")
     os.system('cls')
 
+def volumenArea():
+    print("-------------------------------------")
+    radio = int(input("Ingrese el radio de la esfera: "))
+    V = round((4/3)*math.pi*radio**3)
+    A = round(4*math.pi*radio**2)
+    print("El volumen de la esfera de radio", radio, "es: ", V)
+    print("El area de la esfera de radio", radio, "es: ", A)
+    print("-------------------------------------")
+    input("Para continuar presione Enter")
+    os.system('cls')
+
+def conversionMoneda():
+    print("-------------------------------------")
+    dolares = int(input("Ingrese la cantidad de dolares a convertir: "))
+    pesos = round(dolares * 794.56)
+    print("La cantidad de", dolares, "ingresada en pesos es de: ", pesos)
+    print("-------------------------------------")
+    input("Para continuar presione Enter")
+    os.system('cls')
+
+def areaTriangulo():
+    print("-------------------------------------")
+    base = int(input("Ingrese la base del triangulo: "))
+    altura = int(input("Ingrese la altura del triangulo: "))
+    area = (base*altura)/2
+    print("El area del triangulo es: ", area)
+    print("-------------------------------------")
+    input("Para continuar presione Enter")
+    os.system('cls')
+
+def promedio():
+    print("-------------------------------------")
+    nota1 = int(input("Nota 1 alumno: "))
+    nota2 = int(input("Nota 2 alumno: "))
+    nota3 = int(input("Nota 3 alumno: "))
+    nota4 = int(input("Nota 4 alumno: "))
+
+    p1 = nota1 * 0.30
+    p2 = nota2 * 0.25
+    p3 = nota3 * 0.25
+    p4 = nota4 * 0.20
+
+    promedio = p1+p2+p3+p4
+    print("El promedio del alumno es: ", promedio)
+    print("-------------------------------------")
+    input("Para continuar presione Enter")
+    os.system('cls')
+
+
+def perimetroArea():
+    print("-------------------------------------")
+    lado1 = int(input("Ingrese el primer lado del rectangulo: "))
+    lado2 = int(input("Ingrese el segundo lado del rectangulo: "))
+    perimetro = (lado1*2) + (lado2*2)
+    area = lado1*lado2
+    print("El perimetro del rectangulo de lados", lado1, "y", lado2, "es: ", perimetro)
+    print("El area del rectangulo de lados", lado1, "y", lado2, "es: ", area)
+    print("-------------------------------------")
+    input("Para continuar presione Enter")
+    os.system('cls')
+
+
+def IMC():
+    print("-------------------------------------")
+    altura = float(input("Ingrese su altura: "))
+    peso = float(input("Ingrese su peso: "))
+    imc = round(peso/(altura)**2)
+    print("El IMC de la persona que mide", altura, "y pesa", peso, "kg, es: ", imc)
+    print("-------------------------------------")
+    input("Para continuar presione Enter")
+    os.system('cls')
+IMC()
